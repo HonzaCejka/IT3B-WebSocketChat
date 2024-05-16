@@ -7,6 +7,21 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="50*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Name="statusinfo"  HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Height="197" Width="267" Grid.Row="2"/>
+        <TextBlock FontSize="24" TextAlignment="Center" HorizontalAlignment="Center" Height="40" Grid.Row="1" TextWrapping="Wrap" Text="Stavové informace" VerticalAlignment="Center" Width="267"/>
+        <TextBlock x:Name="messages"  HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Height="197" Width="267" Grid.Row="2" Grid.Column="1"/>
+        <TextBlock FontSize="24" TextAlignment="Center" HorizontalAlignment="Center" Height="40" TextWrapping="Wrap" VerticalAlignment="Center" Width="267" Grid.Row="1" Grid.Column="1"><Run Language="cs-cz" Text="Zprávy"/><LineBreak/><Run Language="cs-cz"/></TextBlock>
+
 
     </Grid>
 </Window>
